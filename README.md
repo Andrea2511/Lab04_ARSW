@@ -5,7 +5,7 @@
 
 ## Ejercico introductorio
 
-El ejercicio se encuentra en el archivo EjercicioIntroductorio.zip
+El ejercicio se encuentra en el archivo [EjercicioIntroductorio.zip](EjercicioIntroductorio.zip)
 
 ## Blueprint
 
