@@ -1,14 +1,13 @@
 package edu.eci.arsw.blueprints;
 
-import edu.eci.arsw.blueprints.model.Blueprint;
-import edu.eci.arsw.blueprints.model.Point;
-import edu.eci.arsw.blueprints.services.BlueprintsServices;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
-import java.util.Arrays;
+import edu.eci.arsw.blueprints.model.Blueprint;
+import edu.eci.arsw.blueprints.model.Point;
+import edu.eci.arsw.blueprints.services.BlueprintsServices;
 
 @SpringBootApplication
 public class BlueprintsApplication {
@@ -21,8 +20,8 @@ public class BlueprintsApplication {
     CommandLineRunner runner(BlueprintsServices blueprintsServices) {
         return args -> {
 
-            Blueprint bp1 = new Blueprint("Alice", "Plan1", new Point[]{ new Point(10, 10), new Point(20, 20) });
-            Blueprint bp2 = new Blueprint("Bob", "Plan2", new Point[]{ new Point(30, 30), new Point(40, 40) });
+            Blueprint bp1 = new Blueprint("Alice", "Plan1", new Point[]{new Point(10, 10), new Point(10, 10), new Point(20, 20), new Point(20, 20), new Point(30, 30)});
+            Blueprint bp2 = new Blueprint("Bob", "Plan2", new Point[]{new Point(30, 30), new Point(40, 40)});
 
             blueprintsServices.addNewBlueprint(bp1);
             blueprintsServices.addNewBlueprint(bp2);
